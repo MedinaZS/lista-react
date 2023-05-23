@@ -1,17 +1,15 @@
-import  { useState } from 'react'
+// import { useState } from 'react'
 
-const NavSubItem = ({ element }) => {
-
-    const [active, setActive] = useState(false)
-
+const NavSubItem = ({ index, element , isSubActive, setIsSubActive}) => {
+    
     const handleClick = () => {
-        setActive(!active)
+        // Indicar cual esta activo
+        setIsSubActive(index)
     }
 
-    
     return (
         <li onClick={handleClick}>
-            <a href="#" className={"link-dark fw-normal rounded " + (active ? "text-danger" : " text-white")}>
+            <a href="#" className={"link-dark fw-normal rounded " + (isSubActive ? "text-info" : " text-white")}>
                 {element}
             </a>
         </li>

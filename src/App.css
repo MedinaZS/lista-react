@@ -1,5 +1,4 @@
-
-#root{
+#root {
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -17,7 +16,7 @@
 
 /* Btn drop */
 .btn-toggle:hover,
-.btn-toggle.btn-drop.active {
+.btn-toggle.active.btn-drop {
   color: rgba(0, 0, 0, .85);
   background-color: #868888;
 }
@@ -27,15 +26,14 @@
   color: coral !important
 }
 
-
 /* Icon */
-.btn-drop > i{
+.btn-drop>i {
   transition: transform .35s;
   transform-origin: .5em 50%;
 }
 
 /* Icon active */
-.active.btn-drop > i {
+.active.btn-drop>i {
   transform: rotate(90deg);
 }
 
@@ -53,19 +51,3 @@
 .btn-toggle-nav a:focus {
   background-color: #d2f4ea;
 } */
-
-.scrollarea {
-  overflow-y: auto;
-}
-
-.fw-semibold { font-weight: 600; }
-.lh-tight { line-height: 1.25; }
-
-
-.collapse.no-show{
-  height: 0;
-  overflow: hidden;
-  transition: height .35s ease
-}
-
-
